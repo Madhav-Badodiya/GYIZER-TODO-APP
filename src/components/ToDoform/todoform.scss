@@ -1,0 +1,101 @@
+.todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+  height: 40px;
+  padding: 20px;
+
+  &.edit {
+      background-color: #242320;
+      padding: 1.5rem;
+  }
+
+  .todo-input {
+      flex: 1;
+      padding: 1rem;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+      border: 1.5px solid #FF8303;
+      background-color: #242320;
+      color: #fff;
+      margin-right: 5px;
+
+      &.edit {
+          background-color: #242320;
+          color: #fff;
+      }
+  }
+
+  .todo-button {
+      background-color: #1E1E24;
+      color: #FF8303;
+      padding: 0.8rem 1rem;
+      border: 1.5px solid #FF8303;
+      font-weight: 450;
+      border-radius: 6px;
+      outline: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &.edit {
+          background-color: #1E1E24;
+      }
+
+      &:hover {
+          background-color: #FF8303;
+          color: #fff;
+
+          &.edit {
+              background-color: #FF8303;
+              color: #fff;
+          }
+      }
+
+      svg {
+          width: 20px;
+          height: 20px;
+      }
+  }
+}
+
+@media (max-width: 768px) {
+  .todo-form {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .todo-input {
+    font-size: 14px;
+    &.edit {
+      background-color: #242320;
+      color: #fff;
+  }
+  }
+  
+  .todo-button {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  .todo-form {
+    width: 40%;
+    height: 40px;
+    padding: 20px;
+  }
+  
+  .todo-input {
+    font-size: 16px;
+  }
+  
+  .todo-button {
+    font-size: 16px;
+  }
+}
